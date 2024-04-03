@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+:root {
+  --bs-secondary-color: ;
+  --bs-primary-rgb: #027cd3;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  font-family: "Tajawal", sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+.navbar-brand img {
+  width: 40px;
+}
+.bg-image {
+  filter: blur(40px);
+}
+.bg-image img {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.card {
+  background-clip: padding-box;
+  box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, 0.1);
+  min-width: 100%;
+  min-height: 100%;
+  border: 0 !important;
+  background-color: rgb(255 255 255 / 60%) !important;
+}
+.description {
+  max-width: 560px;
+}
+.text-muted {
+  font-size: 14px;
+}
+@media screen and (min-width: 574px) {
+  .bg-sm-light {
+    background: rgb(201 229 247 / 40%) !important;
+    filter: blur(0);
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 375px) {
+  .col-xs-6 {
+    flex: 0 0 auto;
+    width: 50% !important;
+  }
+}
+
+.text-primary-custome {
+  color: #027cd3;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.card .learn-more {
+  background-color: #3768ac;
+  visibility: hidden;
+  opacity: 0;
+  bottom: -100%;
+  transition: all 0.3s ease-in-out;
+}
+.card .icon svg {
+  stroke: #027cd3;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+/* card hover event start */
+.card:hover .icon svg {
+  stroke: white;
+}
+.card:hover .text-primary-custome {
+  color: white;
+}
+.card:hover .learn-more {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+/* card hover event end */
+
+.description .text-title {
+  color: #3768ac;
+}
+/* skrolll cstome */
+.container-sm.custome::-webkit-scrollbar {
+  width: 3px;
+}
+
+.container-sm.custome::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+.container-sm.custome::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 30px;
+  transition: 2.5s all ease-in-out;
+}
+
+.container-sm.custome::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+@media screen and (min-width: 768px) {
+  .img-desc {
+    display: block;
+  }
+  .img-our {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .img-desc {
+    display: none;
+  }
+  .img-our {
+    display: block;
+  }
+}
