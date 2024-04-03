@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 :root {
-  --bs-secondary-color: ;
-  --bs-primary-rgb: #027cd3;
+  --bs-primary-v2:#3768ac;
+  --bs-primary: #027cd3;
 }
 
 *,
@@ -54,20 +54,20 @@ html {
 }
 
 .text-primary-custome {
-  color: #027cd3;
+  color: var(--bs-primary);
   font-weight: bold;
   transition: all 0.3s ease-in-out;
   position: relative;
 }
 .card .learn-more {
-  background-color: #3768ac;
+  background-color: var(--bs-primary-v2);
   visibility: hidden;
   opacity: 0;
   bottom: -100%;
   transition: all 0.3s ease-in-out;
 }
 .card .icon svg {
-  stroke: #027cd3;
+  stroke: var(--bs-primary);
   position: relative;
   transition: all 0.3s ease-in-out;
 }
@@ -86,7 +86,7 @@ html {
 /* card hover event end */
 
 .description .text-title {
-  color: #3768ac;
+  color: var(--bs-primary-v2);
 }
 /* skrolll cstome */
 .container-sm.custome::-webkit-scrollbar {
@@ -107,7 +107,7 @@ html {
   background-color: #aaa;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
   .img-desc {
     display: block;
   }
@@ -115,11 +115,22 @@ html {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .img-desc {
     display: none;
   }
   .img-our {
     display: block;
   }
+}
+.dropdown-item {
+  transition: 0.3s all ease-in-out;
+}
+.dropdown .dropdown-menu.show {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+background-color:var(--bs-primary-v2) !important;
 }
