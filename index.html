@@ -41,8 +41,8 @@
     <div
       class="container-sm custome w-100 px-4 pb-0 pt-3 rounded-5 position-relative"
     >
-      <nav class="navbar navbar-light bg-transparent mb-4">
-        <div class="container-fluid px-1">
+      <nav class="navbar navbar-light navbar-expand-lg bg-transparent mb-4">
+        <div class="container-fluid px-1 justify-content-lg-start">
           <a class="navbar-brand d-flex gap-2 align-items-center m-0" href="#">
             <img
               src="assets/images/logo.svg"
@@ -53,23 +53,36 @@
             />
             نظام الرايم
           </a>
-          <div class="dropdown">
-            <button
-              class="navbar-toggler border-0 p-0 shadow-none px-3"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img src="assets/images/colums.png" />
+          <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="dropdown">
+              <button
+                class="navbar-toggler border-0 p-0 shadow-none px-3"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/images/colums.png" />
+              </button class="border-0">
+              <ul class="dropdown-menu border-0 py-3 px-2 gap-2 rounded-4 shadow d-lg-none" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item rounded active" href="#">الصفحة الرئيسية</a></li>
+                <li><a class="dropdown-item rounded" href="#">إختبار</a></li>
+                <li><a class="dropdown-item rounded" href="#">إختبار</a></li>
+              </ul>
             </button>
-            <ul class="dropdown-menu border-0 py-3 px-2 gap-2 rounded-4 shadow" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item rounded active" href="#">مثال</a></li>
-              <li><a class="dropdown-item rounded" href="#">إختبار</a></li>
-              <li><a class="dropdown-item rounded" href="#">إختبار</a></li>
+            <ul class="navbar-nav mb-2 mb-lg-0 me-3 d-lg-flex d-none">
+              <li class="nav-item">
+                <a class="nav-link pb-0 active" aria-current="page" href="#">الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pb-0" href="#">إختبار</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pb-0" href="#">إختبار</a>
+              </li>
             </ul>
           </div>
-        </div>
+          
       </nav>
       <div class="description mb-5">
         <h1 class="text-title">حياك</h1>

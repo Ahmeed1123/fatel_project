@@ -134,3 +134,6 @@ html {
 .dropdown-item:active {
 background-color:var(--bs-primary-v2) !important;
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color:var(--bs-primary-v2) !important;
+}
